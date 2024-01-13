@@ -1596,7 +1596,7 @@ function Accounting() {
         <li><div class="icon"><img src="images/g-card.png" alt="screen icon" width="15em" height="15em"></div>>AMD Radeon Graphics</li>
         <li><div class="icon"><img src="images/weight.png" alt="screen icon" width="15em" height="15em"></div>1-2 kg</li>
         <li><div class="icon"><img src="images/system.png" alt="screen icon" width="15em" height="15em"></div>Win11 Home</li>
-        <li class="purchase"><a target="_blank" href="https://www.akakce.com/laptop-notebook/en-ucuz-dell-inspiron-16-5625-i5625101wh-ryzen-5-5625u-8-gb-256-gb-ssd-radeon-graphics-16-notebook-fiyati,156092604.html?gad_source=1&gclid=Cj0KCQiAtOmsBhCnARIsAGPa5ya5VqG5XpjJo7C8Qt5eOtYbkrUTyLRA93jqSnvwvaL0z3433cODQWUaArocEALw_wcB" class="linkbutton"><button class="purchase-button"Purchase</button></a></li>
+        <li class="purchase"><a target="_blank" href="https://www.akakce.com/laptop-notebook/en-ucuz-dell-inspiron-16-5625-i5625101wh-ryzen-5-5625u-8-gb-256-gb-ssd-radeon-graphics-16-notebook-fiyati,156092604.html?gad_source=1&gclid=Cj0KCQiAtOmsBhCnARIsAGPa5ya5VqG5XpjJo7C8Qt5eOtYbkrUTyLRA93jqSnvwvaL0z3433cODQWUaArocEALw_wcB" class="linkbutton"><button class="purchase-button">Purchase</button></a></li>
     </ul>
 </div>
 
@@ -1626,7 +1626,7 @@ function Accounting() {
         <li><div class="icon"><img src="images/g-card.png" alt="screen icon" width="15em" height="15em"></div>>NVIDIA MX450</li>
         <li><div class="icon"><img src="images/weight.png" alt="screen icon" width="15em" height="15em"></div>1.8 kg</li>
         <li><div class="icon"><img src="images/system.png" alt="screen icon" width="15em" height="15em"></div>FreeDos</li>
-        <li class="purchase"><a target="_blank" href="https://www.akakce.com/laptop-notebook/en-ucuz-acer-aspire-5-a515-56g-nx-at2ey-001-i5-1135g7-8-gb-ram-512-gb-ssd-mx450-15-6-full-hd-notebook-fiyati,245379792.html" class="linkbutton"><button class="purchase-button"Purchase</button></a></li>
+        <li class="purchase"><a target="_blank" href="https://www.akakce.com/laptop-notebook/en-ucuz-acer-aspire-5-a515-56g-nx-at2ey-001-i5-1135g7-8-gb-ram-512-gb-ssd-mx450-15-6-full-hd-notebook-fiyati,245379792.html" class="linkbutton"><button class="purchase-button">Purchase</button></a></li>
     </ul>
 </div>
 

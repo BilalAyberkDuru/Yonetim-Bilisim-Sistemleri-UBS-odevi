@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bilal Ayberk DURU">
+    <meta name="description" content="Yönetim Bilişim Sistemleri 1. sınıf uzman bilişim sistemleri ödevi">
+    <meta name="keywords" content="HTML, JSS, CSS, Homework, YBS, UBS">
+    <link rel="icon" href="images/logo.png" type="images/png">
+    <title>Uzman Bilişim Sistemleri</title>
+    <!-- CSS Dosyasını entegre etmek için -- its just for inject css file to project -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-image: url(images/htmlBackground.png);">
+    <!-- NavBar alanı -- NavBar area -->
+    <header class="flex-header">
+        <img src="images/logo.png" alt="ADU Logo" class="logo">
+        <ul>
+            <li class="adu">AYDIN ADNAN MENDERES ÜNİVERSİTESİ</li>
+            <li class="ubs">UZMAN BİLİŞİM SİSTEMLERİ</li>
+            <li @Bilal class="bad">@Bilal Ayberk DURU ~~~~ 223214005</li>
+            <li>
+                <div class="resetback">
+                    <button class="reset" onclick="reset()">RESET</button>
+                    <button class="back" id="backButton">BACK</button>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- NavBar alanı bitiş -- NavBar area finish -->
+
+    <!-- Soruların, cevapların, reset ve geri butonunun bulunduğu alan -->
+    <div class="qab-area">
+        <div class="start-question-area" id="question-area">
+            <span class="tquestion-1">Hangi dilde devam etmek istersiniz ?</span>
+            <span class="equestion-1">In which language would you like to contiune ?</span>
+        </div>
+
+        <div class="start-answer-area" id="answer-area">
+            <div class="image-text"><button onclick="turkish()" class="flagButton"><img src="images/turkey.png"
+                        alt="Türkçe" class="flagImage"></button><button class="text"
+                    onclick="turkish()">TÜRKÇE</button></div>
+            <div class="image-text"><button onclick="english()" class="flagButton"><img
+                        src="images/british.png" alt="English" class="flagImage"></button><button class="text"
+                    onclick="english()">ENGLISH</button></div>
+        </div>
+    </div>
+
+    <!-- JS Dosyasını entegre etmek için  -- its just for inject js file to project -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

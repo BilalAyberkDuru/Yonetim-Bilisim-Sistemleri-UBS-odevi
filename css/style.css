@@ -1,0 +1,725 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex-header {
+    background-color: #a3cdef;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 10em 7em 10em;
+    border-radius: 4em 7em 2.5em 6em;
+    height: 6.33em;
+    padding-left: 0.66em;
+}
+
+.flex-header ul {
+    list-style-type: none;
+    padding: 0em;
+    margin-top: 0.5em;
+}
+
+.logo {
+    height: 128px;
+    width: 128px;
+    float: left;
+    margin-top: 0.66em;
+}
+
+.adu {
+    font-weight: lighter;
+    font-size: 2em;
+    letter-spacing: -2px;
+    margin-left: 0.5em;
+}
+
+.ubs {
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
+    margin-left: 0.66em;
+}
+
+.bad {
+    background-color: #20308c;
+    color: white;
+    font-weight: bold;
+    width: 19.5em;
+    height: 1.77em;
+    margin-top: 0.1em;
+    border-radius: 4em 1.66em 3.66em 1em;
+    padding: 0.22em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+/* width 1024 çözünürlükte bozulmaması için media etiketi ---- media label for good view at 1024 width resolution */
+@media (max-width: 1024px) {
+    .flex-header {
+        margin: 1em 3em 7em 3em;
+    }
+}
+
+
+/* width 770 çözünürlükte bozulmaması için media etiketi ---- media label for good view at 770 width resolution */
+@media (max-width: 770px) {
+    .flex-header {
+        margin: 1em 3em 10em 3em;
+        height: 9em;
+    }
+}
+
+/* Soru ve cevapların başladığı yer -- Where the questions and answers begin  */
+div.qab-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 6em;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+}
+
+div.start-question-area {
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 4.5em;
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+}
+
+.tquestion-1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.equestion-1 {
+    font-size: 1em;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+}
+
+.start-answer-area {
+    background-color: #d4e7f7;
+    border-radius: 3.7em 8.5em 2em 5.5em;
+    width: 40em;
+    height: 17em;
+    max-height: 17em;
+    padding-top: 1em;
+    border: gray 1px solid;
+    position: relative;
+    bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
+
+.flagButton {
+    width: 10em;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #93c4eb;
+    border-radius: 5em;
+}
+
+.flagButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.flagImage {
+    width: 10em;
+    height: 10em;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+}
+
+.text {
+    padding: 0.6em 2em;
+    border-radius: 1em 3em 2em 4em;
+    cursor: pointer;
+    border: none;
+    background-color: #a3cdef;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+}
+
+.text:hover {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 7px 29px 0px;
+}
+
+.text:active {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.reset {
+    padding: 0.6em 2em;
+    border-radius: 1em 3em 2em 4em;
+    cursor: pointer;
+    border: grey solid 1px;
+    background-color: #a3cdef;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 0.5;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+    height: 2.4em;
+    width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset:hover {
+    letter-spacing: 3px;
+    border: none;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 7px 29px 0px;
+}
+
+.reset:active {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.back {
+    padding: 0.6em 2em;
+    border-radius: 1em 3em 2em 4em;
+    cursor: pointer;
+    border: grey solid 1px;
+    background-color: #a3cdef;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 0.5;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+    height: 2.4em;
+    width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back:hover {
+    letter-spacing: 3px;
+    border: none;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 7px 29px 0px;
+}
+
+.back:active {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.resetback {
+    display: flex;
+    gap: 1em;
+}
+
+button.pc {
+    height: 9em;
+    width: 9em;
+    margin: auto 3em;
+    background-color: #d4e7f7;
+    border: none;
+}
+
+img.pc {
+    height: 9em;
+    width: 9em;
+}
+
+img.pc:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.turkishquestion1-area {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 2em;
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+}
+
+.turkishAnswer1-area {
+    background-color: #d4e7f7;
+    border-radius: 3.7em 8.5em 2em 5.5em;
+    width: 35em;
+    height: 15em;
+    max-height: 17em;
+    border: gray 1px solid;
+    position: relative;
+    bottom: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.turkishquestion2-area {
+    font-size: 2em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 1.5em;
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    margin-bottom: 2em;
+}
+
+div.computerpoint {
+    width: 100em;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.headpoint {
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    height: 2.75em;
+    width: 6.5em;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 2em 1em 3em 3em;
+    z-index: 1;
+}
+
+div.headpoint2 {
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    height: 2.75em;
+    width: 11em;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 2em 1em 3em 3em;
+    z-index: 1;
+}
+
+span.headtext1 {
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.headtext2 {
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.optionzone {
+    border: gray 1px solid;
+    background-color: #d4e7f7;
+    width: 20em;
+    height: 15em;
+    border-radius: 6em 2em 5em 4em;
+    position: relative;
+    bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.button-1 {
+    padding: 0.6em 2em;
+    border-radius: 3em 8em 2em 5em;
+    cursor: pointer;
+    border: none;
+    background-color: #93c4eb;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+    width: 9em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.button-1:hover {
+    letter-spacing: 3px;
+    border: none;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 7px 29px 0px;
+}
+
+.button-1:active {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.turkishQuestion3-area {
+    font-size: 2em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 1.5em;
+    width: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    margin-bottom: 2em;
+}
+
+.englishQuestion1-area {
+    font-size: 2em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 1.5em;
+    width: 14em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    margin-bottom: 2em;
+}
+
+.yes {
+    padding: 0.6em 2em;
+    border-radius: 3em 8em 2em 5em;
+    cursor: pointer;
+    border: none;
+    background-color: #93c4eb;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+    width: 9em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.yes:hover {
+    letter-spacing: 3px;
+    border: none;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 7px 29px 0px;
+}
+
+.yes:active {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.no {
+    padding: 0.6em 2em;
+    border-radius: 3em 8em 2em 5em;
+    cursor: pointer;
+    border: none;
+    background-color: #93c4eb;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+    width: 9em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.no:hover {
+    letter-spacing: 3px;
+    border: none;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 7px 29px 0px;
+}
+
+.no:active {
+    letter-spacing: 3px;
+    background-color: #20308c;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #20308c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.turkishAnswer3-area {
+    background-color: #d4e7f7;
+    border-radius: 3.7em 8.5em 2em 5.5em;
+    width: 35em;
+    height: 10em;
+    max-height: 17em;
+    border: gray 1px solid;
+    position: relative;
+    bottom: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.turkishQuestion4-area {
+    font-size: 2em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #20308c;
+    color: white;
+    height: 1.4em;
+    border-radius: 1em 1em 2em 1em;
+    width: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    margin-bottom: 2em;
+}
+
+.pc-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 5em 9em;
+}
+
+.pcbox {
+    width: 20em;
+}
+
+.pcbox h2 {
+    color: white;
+    background-color: #20308c;
+    padding: 0.7em 1.2em;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-top-left-radius: 0.66em;
+    margin-bottom: 0em;
+    border-top-right-radius: 0.66em;
+}
+
+.pcbox ul {
+    position: relative;
+    background: white;
+    padding-left: 0em;
+    margin-top: 0em;
+}
+
+.pcbox ul:hover li {
+    opacity: 0.2;
+}
+
+.pcbox ul li {
+    list-style: none;
+    padding: 0.66em;
+    background: white;
+    box-shadow: 0 0.33em 1.66em rgba(0, 0, 0, .1);
+    transition: 0.5s;
+}
+
+.pcbox ul li:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    background: #25bcff;
+    box-shadow: 0 .33em 1.66em rgba(0, 0, 0, 0.2);
+    color: white;
+    opacity: 1;
+}
+
+.purchase-button {
+    border: none;
+    font-size: 1.1em;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    padding: 0;
+    background: #25bcff;
+    color: white;
+    border-radius: 1em;
+    height: 1.5em;
+    width: 4.5em;
+}
+
+.purchase-button:hover {
+    background-color: white;
+    color: #25bcff;
+    cursor: pointer;
+}
+
+.pcbox ul li.purchase:hover .purchase-button {
+    background-color: white;
+    color: #25bcff;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 0.5em;
+    line-height: 1.7em;
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #25bcff;
+    border-radius: 0.5em;
+}
+
+.pcbox ul li:hover .icon {
+    background-color: white;
+    color: white;
+}
+
+.turkishquestion5-area {
+    font-size: 2em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 1.5em;
+    width: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    margin-bottom: 2em;
+}
+
+.englishquestion2-area {
+    font-size: 2em;
+    font-weight: bold;
+    border: gray 1px solid;
+    background-color: #93c4eb;
+    border-radius: 3.5em 2em 5em 2em;
+    height: 1.5em;
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: Means Web, Georgia, Times, Times New Roman, serif;
+    margin-bottom: 2em;
+}
+
+.budgetbutton {
+    background-color: #93c4eb;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 9em 2em 6em 4em;
+    width: 8em;
+    height: 3em;
+    font-weight: bold;
+}
+
+.turkishAnswer4-area {
+    background-color: #d4e7f7;
+    border-radius: 3.7em 8.5em 2em 5.5em;
+    width: 40em;
+    height: 15em;
+    max-height: 17em;
+    border: gray 1px solid;
+    position: relative;
+    bottom: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.button-2 {
+    padding: 0.6em 2em;
+    border-radius: 3em 8em 2em 5em;
+    cursor: pointer;
+    border: none;
+    background-color: #93c4eb;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+    font-family: Web, Georgia, Times, Times New Roman, serif;
+    width: 9em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
